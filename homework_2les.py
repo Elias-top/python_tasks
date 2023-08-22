@@ -33,15 +33,28 @@
 # этого Петя делает две подсказки. Он называет сумму этих чисел S и их
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 
-sum_num = int(input("скажи сумму чисел: "))
-mult_num = int(input("скажи произведение чисел: "))
-num_1 = 0
-num_2 = 0
+# sum_num = int(input("скажи сумму чисел: "))
+# mult_num = int(input("скажи произведение чисел: "))
+# num_1 = 0
+# num_2 = 0
 
-for x in range (1, 1001):
-    num_1 = x
-    num_2 = sum_num - num_1
-    if(((num_1 * num_2) == mult_num) & ((num_1 + num_2) == sum_num)):
-        break
-    print(num_1)
-print(num_1, num_2)
+# for x in range (1, 1001):
+#     num_1 = x
+#     num_2 = sum_num - num_1
+#     if(((num_1 * num_2) == mult_num) & ((num_1 + num_2) == sum_num)):
+#         break
+#     print(num_1)
+# print(num_1, num_2)
+
+# Задача 14: Требуется вывести все целые степени двойки (т.е. числа
+# вида 2k), не превосходящие числа N.
+# user_num = int(input("введи число: "))
+# result = 0
+# k = 0
+# while(True):
+#     result = 2 ** k
+#     k += 1
+#     if(result < user_num):
+#         print(result)
+#     else:
+#         break
