@@ -3,23 +3,59 @@
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества. m — кол-во элементов второго множества. 
 # Затем пользователь вводит сами элементы множеств.
 
-n1 = int(input("введи кол-во элементов первого множества"))
-n2 = int(input("введи кол-во элементов второго множества"))
+# n1 = int(input("введи кол-во элементов первого множества "))
+# n2 = int(input("введи кол-во элементов второго множества "))
 
-array_1 = []
-array_2 = []
+# array_1 = []
+# array_2 = []
 
-for x in range(n1):
-    array_1.append(int(input(f"введи {x} элемент первого множества")))
+# for x in range(n1):
+#     array_1.append(int(input(f"введи {x} элемент первого множества ")))
 
-for x in range(n2):
-    array_2.append(int(input(f"введи {x} элемент второго множества")))
+# for x in range(n2):
+#     array_2.append(int(input(f"введи {x} элемент второго множества ")))
 
-array_1 = set(array_1)
-array_2 = set(array_2)
+# array_1 = set(array_1)
+# array_2 = set(array_2)
 
-s_intersection = array_1.intersection(array_2)
+# s_intersection = array_1.intersection(array_2)
 
-print(*sorted(s_intersection))
-# print()
-# print(array_2)
+# print(*sorted(s_intersection))
+
+# Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растёт на круглой грядке, 
+# причём кусты высажены только по окружности. Таким образом, у каждого куста есть ровно два соседних. Всего на грядке растёт N кустов.
+# Эти кусты обладают разной урожайностью, поэтому ко времени сбора на них выросло различное число ягод — на i-ом кусте выросло ai ягод.
+# В этом фермерском хозяйстве внедрена система автоматического сбора черники. Эта система состоит из управляющего модуля и 
+# нескольких собирающих модулей. Собирающий модуль за один заход, находясь непосредственно перед некоторым кустом, 
+# собирает ягоды с этого куста и с двух соседних с ним.Напишите программу для нахождения максимального числа ягод, 
+# которое может собрать за один заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
+
+# import random 
+
+# sum_yagod = []
+# num_yagod_on_cust_array = list()
+
+# while(True):
+#     try:
+#         num_cust = int(input("введи количество кустов "))
+#         if(num_cust < 3):
+#             raise ValueError
+#         break
+#     except ValueError:
+#         print("Количество кустов должно быть три и больше")
+
+# for x in range(num_cust):
+#     num_yagod_on_cust_array.append(random.randint(0, 5))
+# print(num_yagod_on_cust_array)
+
+# for x in range(num_cust):
+#     if((num_cust - 1) == x):
+#         sum_yagod.append(num_yagod_on_cust_array[x] + num_yagod_on_cust_array[x - 1] + num_yagod_on_cust_array[0])
+#         continue
+#     sum_yagod.append(num_yagod_on_cust_array[x] + num_yagod_on_cust_array[x - 1] + num_yagod_on_cust_array[x + 1])
+
+# print(sum_yagod)
+
+# sum_yagod.sort(reverse=True)
+
+# print(f"Ответ: {sum_yagod[0]}")
